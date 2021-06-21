@@ -1,0 +1,21 @@
+.row{
+    font-size: 25;
+    font-weight: 250;
+    color: aliceblue;
+}
+
+.Keypad{
+    /* margin: 2px; */
+    background-color: rgba(0, 0, 0, 0.822) ;
+}
+
+#num{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+/* #dropdown{ */
+    /* width: 80%; */
+/* } */
+#m{
+    /* width: 50%; */
+    border: 0 black;
+}

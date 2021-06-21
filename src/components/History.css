@@ -1,0 +1,26 @@
+#logic{
+    padding-right: 5px;
+    padding-left: 5px;
+    /* padding-top: 6px;  */
+    /* background-color:rgb(77, 79, 82); */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    /* font-weight: bold; */
+    text-align: right;
+    color:aliceblue;
+    /* border:1px solid blue;  */
+    height:20px;
+}
+
+#h_Result{
+    padding-left: 5px;
+    padding-right: 5px;
+    /* background-color:rgb(77, 79, 82); */
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    color:aliceblue;
+    /* border:1px solid blue;  */
+    height:25px;
+}
