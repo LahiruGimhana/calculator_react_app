@@ -42,26 +42,26 @@ function Keypad(props) {
             </div>
 
             <div className="row">
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(7)}>7</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(8)}>8</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(9)}>9</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('7')}>7</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('8')}>8</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('9')}>9</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('*')}>*</Card.Grid>
             </div>
             <div className="row">
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(4)}>4</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(5)}>5</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(6)}>6</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('4')}>4</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('5')}>5</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('6')}>6</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('-')}>-</Card.Grid>
             </div>
             <div className="row">
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(1)}>1</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(2)}>2</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(3)}>3</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('1')}>1</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('2')}>2</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('3')}>3</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('+')}>+</Card.Grid>
             </div>
             <div className="row">
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('+/-')}>+/-</Card.Grid>
-                <Card.Grid style={gridStyle} onClick={()=>InputNum(0)}>0</Card.Grid>
+                <Card.Grid style={gridStyle} onClick={()=>InputNum('0')}>0</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputNum('.')}>.</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('=')}>=</Card.Grid>
                 {/* <Card.Grid ></Card.Grid> */}

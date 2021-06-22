@@ -11,7 +11,7 @@ function Result() {
     return (
         <div>
             <div className="row" id='result_history'>
-                <span class="label label-default">{Result.Result}{Result.lastOpr}</span>
+                <span class="label label-default">{Result.lastNum}{Result.lastOpr}</span>
             </div>
             <div className="row" id='result'>
                 <span class="label label-default" id="alert"  style={{height:'50px'}}>
