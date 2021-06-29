@@ -1,9 +1,8 @@
 import React ,{ useState} from 'react';
-import Key from './Key';
 import './Keypad.css';
-import { Card, InputNumber } from 'antd';
+import { Card } from 'antd';
 import {sendInputNu , sendInputOpr} from '../redux/action/calculationAction';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 
 function Keypad(props) {
@@ -17,18 +16,18 @@ function Keypad(props) {
         borderColor: 'coral'
       };
 
-      const [state, setState] = useState([]);
+    //   const [state] = useState([]);
 
       const InputNum=(inputValue)=>{
-            state.push(inputValue);
+            // state.push(inputValue);
             // Console.log(state.toString());
             dispatch(sendInputNu(inputValue));
         }
         
 
       const InputOpr=(operator)=>{ 
-            console.log(parseFloat(state.join("")));
-            // dispatch(sendInputNu(state.toString()));
+            // console.log(parseFloat(state.join("")));
+            
             dispatch(sendInputOpr(operator));
         }
 
@@ -38,6 +37,8 @@ function Keypad(props) {
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('C')}>C</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('x')}>x</Card.Grid>
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('%')}>%</Card.Grid>
+                {/* <Card.Grid style={gridStyle} onClick={()=>InputOpr('%')}>%</Card.Grid> */}
+                {/* <Key /> */}
                 <Card.Grid style={gridStyle} onClick={()=>InputOpr('/')}>/</Card.Grid>
             </div>
 

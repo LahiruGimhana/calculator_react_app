@@ -1,43 +1,34 @@
-import React from 'react';
+import React , { useEffect } from 'react';
 import './History.css';
 import {useDispatch, useSelector } from 'react-redux';
+import HistoryData from '../historyData/historyData'
+import {getHistoryElemant} from '../redux/action/calculationAction'
 
+function History(props) {
+    let dispatch=useDispatch();
 
-function History() {
-    const Result = useSelector(state => { return state.calculation_data });
-
-
- const expression=()=>{
-        if(Result.expression.length!==0){
-            
-            Result.expression.map(data=>{
-                // return(data);
-                return(
-                    <div>
-                        <p>{data}</p>
-                    </div>
-                );
-                
-            })
     
-            // return(
-            //     <History
-            //     Data={Result}
-                
-            //     />
-            // )
+ 
+    const clickHistory=()=>{
+        if(props.Data!==''){
+        dispatch(getHistoryElemant(props.Data, props.value));
         }
     }
+
+
     
     return (
-        <div style={{margin: '2px'}}>
+        <div >
+        <div style={{margin: '2px'}}  id='' type="button" onClick={clickHistory} value={props.Data , props.value} style={{border:'1px solid rgb(55, 56, 58)', backgroundColor:'rgb(55, 56, 58)', margin:'2px'}}>
             <div id='logic' >
-                {/* {Result.expression} */}
-                {expression()}
+                {props.Data}
+                {/* {expression()} */}
             </div>
             <div id='h_Result'>
-                {Result.Result} <hr/>
+                {props.value}
+                {/* {Result.Result} */}
             </div>
+        </div>
         </div>
     )
 }
