@@ -6,7 +6,6 @@ import {useSelector } from 'react-redux';
 function Result() {
 
     const Result = useSelector(state => { return state.calculation_data })
-            // {/* <p placeholder="Result" style={{textAlign:'left',paddingTop:'0px', backgroundColor:'rgb(77, 79, 82)'}}>Standard</p> */}
 
     return (
         <div>
@@ -22,4 +21,5 @@ function Result() {
     )
 }
 
-export default Result
+export default React.memo(Result)
+// export default Result

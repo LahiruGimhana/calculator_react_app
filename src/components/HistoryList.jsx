@@ -46,14 +46,11 @@ function HistoryList(props) {
 
     return (
         <div className="row" style={{backgroundColor:'rgb(61, 66, 71)', height:'60vh', paddingTop:'20px'}}>
-            {/* <ul> */}
                 <ul className="list-group">
                     <div style={{height:'53vh'}}> 
-                        {/* < History /> */}
                         {expression()}
                     </div>
                 </ul>
-            {/* </ul> */}
             <div>
                 <div className='delete' id='delete' type="button" style={{textAlign:'right'}} onClick={deleteButton}>delete</div>
             </div>
@@ -62,4 +59,4 @@ function HistoryList(props) {
     
 }
 
-export default HistoryList
+export default React.memo(HistoryList)

@@ -16,17 +16,13 @@ function Keypad(props) {
         borderColor: 'coral'
       };
 
-    //   const [state] = useState([]);
 
       const InputNum=(inputValue)=>{
-            // state.push(inputValue);
-            // Console.log(state.toString());
             dispatch(sendInputNu(inputValue));
         }
         
 
       const InputOpr=(operator)=>{ 
-            // console.log(parseFloat(state.join("")));
             
             dispatch(sendInputOpr(operator));
         }

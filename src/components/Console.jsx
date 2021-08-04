@@ -9,14 +9,12 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 
-// import { Row, Col } from 'antd';
 
 function Console() {
     return (
         <>
         <div className="container">
             <Card hoverable style={{ width: '80vw',height:'72vh',margin:'3px' }}>
-            {/* <div className="mainPage"> */}
                 <div className="row justify-content-center" style={{height:'60vh', padding:'0px', margin:'0'}}>
                     <div className="col-9" >
                         <div className="row" id="result">
@@ -30,7 +28,6 @@ function Console() {
                         <HistoryList/>
                     </div>
                 </div>
-            {/* </div> */}
         </Card>
             
         </div>

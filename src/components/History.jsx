@@ -22,11 +22,9 @@ function History(props) {
         <div style={{margin: '2px'}}  id='' type="button" onClick={clickHistory} value={props.Data , props.value} style={{border:'1px solid rgb(55, 56, 58)', backgroundColor:'rgb(55, 56, 58)', margin:'2px'}}>
             <div id='logic' >
                 {props.Data}
-                {/* {expression()} */}
             </div>
             <div id='h_Result'>
                 {props.value}
-                {/* {Result.Result} */}
             </div>
         </div>
         </div>
